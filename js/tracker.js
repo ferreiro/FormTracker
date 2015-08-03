@@ -12,7 +12,7 @@ var sessionStorageName = 'contactForm_';
 	// We load all the values when the user access this page for the firts time.
 
 	function loadUserText() {
-		var stkey, stValue, total = keepValueFields.length;
+		var stkey, total = keepValueFields.length;
 
 		for (i = 0; i < total; i++) {
 			stkey 	= sessionStorageName + i; 			// Setting the key name. Change this for a different name 
