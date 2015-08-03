@@ -21,8 +21,6 @@ var sessionStorageName = 'contactForm_';
 			stkey 	= sessionStorageName + i; 		// Setting the key name. Change this for a different name 
 			st.setItem(stkey, '');					// Clearing session storage for that name
 		}
-		
-  		loadUserText();		// Setting empty texts again
 	}
 
 	// Load values to the inputs field.
