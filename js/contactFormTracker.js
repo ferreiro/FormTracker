@@ -34,7 +34,8 @@ var sessionStorageName = 'contactForm_';
 
 		for (i = 0; i < total; i++) {
 			stkey 	= sessionStorageName + i; 			// Setting the key name. Change this for a different name 
-			keepValueFields[i].value = st.getItem(stkey);	// getting the value from session storage and setting the input text with dat value
+			if(st.getItem(stkey) != "undefined") 
+				keepValueFields[i].value = st.getItem(''+ stkey + '');	// getting the value from session storage and setting the input text with dat value
 		}
 	}
 
